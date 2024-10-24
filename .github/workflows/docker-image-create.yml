@@ -19,9 +19,6 @@ jobs:
       - name: Build Docker image
         run: docker build . --tag ghcr.io/${{ github.repository }}:latest
 
-      - name: Run Docker image (optional, for testing)
-        run: docker run ghcr.io/${{ github.repository }}:latest
-
       - name: Push Docker image to GitHub Container Registry
         run: docker push ghcr.io/${{ github.repository }}:latest
 
