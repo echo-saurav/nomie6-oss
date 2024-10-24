@@ -1,6 +1,7 @@
-name: publish
-
-on: [push]
+name: docker-image
+on:
+  push:
+    branches: [ "master" ]
 
 jobs:
   create-docker-image:
