@@ -1,0 +1,11 @@
+---
+services:
+  nomie6:
+    container_name: nomie6-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 2321:80
+
+
