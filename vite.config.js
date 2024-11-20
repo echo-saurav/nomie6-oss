@@ -17,6 +17,8 @@ export default defineConfig({
     exclude: ['canvas-confetti', 'tributejs', 'svelte-navigator'],
   },
   build: {
+    outDir: './docs',
+    emptyOutDir: true, // also necessary
     rollupOptions: {
       // external: ['aws-sdk','aws-sdk/clients/S3'],
       output: {
